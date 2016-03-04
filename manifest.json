@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "FogBugz.CollapseExpandAll",
+  "version": "0.0.1",
+
+  "description": "Expand/Collapse subcases in FogBugz list view",
+
+
+  "background": {
+        "scripts": [ "background.js" ]
+  },
+    
+  "page_action": {
+    "default_title": "Button",
+    "default_icon": "icon.png"
+  },
+  
+  "content_scripts": [
+  {
+      "matches": ["https://4subsea.fogbugz.com/*"],
+      "js": ["jquery.js", "collapseexpand.js"]
+  }],
+   
+  "author": "Loc Tan Vo"
+}
