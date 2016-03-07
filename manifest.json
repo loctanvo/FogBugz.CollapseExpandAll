@@ -1,19 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "FogBugz.CollapseAll",
+  "name": "FogBugz - CollapseAll",
   "version": "0.0.1",
 
   "description": "Collapse all subcases in FogBugz list view",
     
-  "page_action": {
-    "default_title": "Button",
-    "default_icon": "icon.png"
+  "page_action": {    
+    "default_title": "Collapse All plugin",
+    "default_icon": "icon_collapse.png"
   },
   
   "content_scripts": [
   {
       "matches": ["https://*.fogbugz.com/*"],
-      "js": ["jquery.js", "collapsAll.js"]
+      "js": ["jquery.js", "collapseAll.js"]
   }],
    
   "author": "Loc Tan Vo"
